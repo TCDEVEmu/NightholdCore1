@@ -13,7 +13,7 @@ concurrency:
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
-  BUILD_TYPE: Release
+  BUILD_TYPE: RelWithDebInfo
   REPO_DIR : ${{github.workspace}}
   BUILD_DIR: ${{github.workspace}}/bin/builddir
   BOOST_TOOLSET: "msvc14.1"
@@ -22,7 +22,7 @@ env:
   
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-2022
     
     steps:
     #git checkout
